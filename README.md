@@ -1,13 +1,6 @@
-# Gatsby Starter with React Bootstrap and Contentful
+# High Level CMS Comparison
 
-A GatsbyJS starter that includes
-
-- react-bootstrap
-- react-icons
-- sticky on scroll navbar
-- SASS compiler
-- basic layout
-- Contentful integration
+The project was built by GatsbyJS + Contentful.
 
 ## Getting started
 

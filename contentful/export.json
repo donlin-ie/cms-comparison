@@ -1,0 +1,5201 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2019-11-20T23:33:05.108Z",
+        "updatedAt": "2019-11-20T23:33:09.841Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-11-20T23:33:09.841Z",
+        "firstPublishedAt": "2019-11-20T23:33:09.841Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Blog Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "person"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "publishDate",
+          "name": "Publish Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "general",
+                  "javascript",
+                  "static-sites"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "person",
+        "type": "ContentType",
+        "createdAt": "2019-11-20T23:33:05.829Z",
+        "updatedAt": "2019-11-20T23:33:09.341Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-11-20T23:33:09.341Z",
+        "firstPublishedAt": "2019-11-20T23:33:09.341Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Person",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "company",
+          "name": "Company",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "shortBio",
+          "name": "Short Bio",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "phone",
+          "name": "Phone",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "facebook",
+          "name": "Facebook",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "twitter",
+          "name": "Twitter",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "github",
+          "name": "Github",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "slide",
+        "type": "ContentType",
+        "createdAt": "2019-11-21T01:34:41.082Z",
+        "updatedAt": "2019-11-29T02:34:52.217Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-11-29T02:34:52.217Z",
+        "firstPublishedAt": "2019-11-21T01:34:42.181Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Slide",
+      "description": "",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "index",
+          "name": "Index",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "reference",
+          "name": "Reference",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "cms",
+        "type": "ContentType",
+        "createdAt": "2019-11-21T23:29:03.618Z",
+        "updatedAt": "2019-12-05T01:28:08.995Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2019-12-05T01:28:08.995Z",
+        "firstPublishedAt": "2019-11-21T23:29:04.246Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "CMS",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fullName",
+          "name": "Full Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "show",
+          "name": "Show",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "comparisonFieldValues",
+          "name": "Comparison Field Values",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sortIndex",
+          "name": "Sort Index",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "releaseDate",
+          "name": "Release Date",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "comparisonField",
+        "type": "ContentType",
+        "createdAt": "2019-11-21T23:33:05.506Z",
+        "updatedAt": "2019-11-29T04:44:40.624Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-11-29T04:44:40.624Z",
+        "firstPublishedAt": "2019-11-21T23:33:07.283Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Comparison Field",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fieldIndex",
+          "name": "FieldIndex",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "show",
+          "name": "Show",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "rowClass",
+          "name": "Row Class",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slideIndex",
+          "name": "Slide Index",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2zutlh8ds7xr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-11-20T23:33:09.995Z",
+        "createdBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-11-20T23:33:10.691Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "entryLinkEditor"
+        },
+        {
+          "fieldId": "publishDate",
+          "settings": {
+            "ampm": "24",
+            "format": "timeZ"
+          },
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "tags",
+          "widgetId": "tagEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2zutlh8ds7xr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-11-20T23:33:09.470Z",
+        "createdBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-11-20T23:33:10.794Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "person",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "company",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "shortBio",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "phone",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "facebook",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "twitter",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "github",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2zutlh8ds7xr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2019-11-21T01:34:42.335Z",
+        "createdBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-11-29T02:34:53.147Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "slide",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "index",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "reference",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2zutlh8ds7xr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 14,
+        "createdAt": "2019-11-21T23:29:04.386Z",
+        "createdBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-12-05T01:28:09.757Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "cms",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fullName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "show",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "comparisonFieldValues",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sortIndex",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "releaseDate",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "2zutlh8ds7xr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2019-11-21T23:33:07.405Z",
+        "createdBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-11-29T04:44:42.161Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3O2hSWn79yjqD5lentHqpM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "comparisonField",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fieldIndex",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "show",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "rowClass",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slideIndex",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "15jwOBqpxqSAOy2eOO4S0m",
+        "type": "Entry",
+        "createdAt": "2019-11-20T23:33:21.703Z",
+        "updatedAt": "2019-11-21T01:19:01.053Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2019-11-21T01:19:01.053Z",
+        "firstPublishedAt": "2019-11-20T23:33:25.597Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "person"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "John Doe 2"
+        },
+        "title": {
+          "en-US": "Web Developer"
+        },
+        "company": {
+          "en-US": "ACME"
+        },
+        "shortBio": {
+          "en-US": "Research and recommendations for modern stack websites."
+        },
+        "email": {
+          "en-US": "john@doe.com"
+        },
+        "phone": {
+          "en-US": "0176 / 1234567"
+        },
+        "facebook": {
+          "en-US": "johndoe"
+        },
+        "twitter": {
+          "en-US": "johndoe"
+        },
+        "github": {
+          "en-US": "johndoe"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7orLdboQQowIUs22KAW4U"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "2PtC9h1YqIA6kaUaIsWEQ0",
+        "type": "Entry",
+        "createdAt": "2019-11-20T23:33:21.708Z",
+        "updatedAt": "2019-11-20T23:33:26.296Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-11-20T23:33:26.296Z",
+        "firstPublishedAt": "2019-11-20T23:33:26.296Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Static sites are great"
+        },
+        "slug": {
+          "en-US": "static-sites-are-great"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4NzwDSDlGECGIiokKomsyI"
+            }
+          }
+        },
+        "description": {
+          "en-US": "Worry less about security, caching, and talking to the server. Static sites are the new thing."
+        },
+        "body": {
+          "en-US": "## The case for the static site generator\n\nMore and more developers are jumping on the \"go static train\", and rightfully so. Static pages are fast, lightweight, they scale well. They are more secure, and simple to maintain and they allow you to focus all your time and effort on the user interface. Often times, this dedication really shows.\n\nIt just so happens that static site generators are mostly loved by developers, but not by the average Joe. They do not offer WYSIWYG, previewing on demo sites may take an update cycle, they are often based on markdown text files, and they require some knowledge of modern day repositories.\n\nMoreover, when teams are collaborating, it can get complicated quickly. Has this article already been proof-read or reviewed? Is this input valid? Are user permissions available, e.g. for administering adding and removing team members? Can this article be published at a future date? How can a large repository of content be categorized, organized, and searched? All these requirements have previously been more or less solved within the admin area of your CMS. But of course with all the baggage that made you leave the appserver-app-database-in-one-big-blob stack in the first place.\n\n## Content APIs to the rescue\n\nAn alternative is decoupling the content management aspect from the system. And then replacing the maintenance prone server with a cloud based web service offering. Effectively, instead of your CMS of old, you move to a [Content Management as a Service (CMaaS)](https://www.contentful.com/r/knowledgebase/content-as-a-service/ \"Content Management as a Service (CMaaS)\") world, with a content API to deliver all your content. That way, you get the all the [benefits of content management features](http://www.digett.com/blog/01/16/2014/pairing-static-websites-cms \"benefits of content management features\") while still being able to embrace the static site generator mantra.\n\nIt so happens that Contentful is offering just that kind of content API. A service that\n\n* from the ground up has been designed to be fast, scalable, secure, and offer high uptime, so that you don’t have to worry about maintenance ever again.\n* offers a powerful editor and lots of flexibility in creating templates for your documents that your editors can reuse and combine, so that no developers resources are required in everyday writing and updating tasks.\n* separates content from presentation, so you can reuse your content repository for any device platform your heart desires. That way, you can COPE (\"create once, publish everywhere\").\n* offers webhooks that you can use to rebuild your static site in a fully automated fashion every time your content is modified.\n\nExtracted from the article [CMS-functionality for static site generators](https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/ \"CMS-functionality for static site generators\"). Read more about the [static site generators supported by Contentful](https://www.contentful.com/developers/docs/tools/staticsitegenerators/ \"static site generators supported by Contentful\")."
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "15jwOBqpxqSAOy2eOO4S0m"
+            }
+          }
+        },
+        "publishDate": {
+          "en-US": "2017-05-16T00:00+02:00"
+        },
+        "tags": {
+          "en-US": [
+            "javascript",
+            "static-sites"
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "31TNnjHlfaGUoMOwU0M2og",
+        "type": "Entry",
+        "createdAt": "2019-11-20T23:33:21.717Z",
+        "updatedAt": "2019-11-20T23:33:27.358Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-11-20T23:33:27.358Z",
+        "firstPublishedAt": "2019-11-20T23:33:27.358Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Automate with webhooks"
+        },
+        "slug": {
+          "en-US": "automate-with-webhooks"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4shwYI3POEGkw0Eg6kcyaQ"
+            }
+          }
+        },
+        "description": {
+          "en-US": "Webhooks notify you, another person or system when resources have changed by calling a given HTTP endpoint."
+        },
+        "body": {
+          "en-US": "## What are webhooks?\n\nThe webhooks are used to notify you when content has been changed. Specify a URL, configure your webhook, and we will send an HTTP POST request whenever something happens to your content.\n\n## How do I configure a webhook?\n\nGo to Settings → Webhooks from the navigation bar at the top. From there, hit Add webhook, and you will be directed to your new webhook. Then choose a name, put in the information of your HTTP endpoint (URL and authentication), specify any custom headers and select the types of events that should trigger the webhook.\n\n## Why do I get an old version in the CDA?\n\nAs the delivery API is powered by a CDN network consisting of hundreds of servers distributed across continents, it takes some time (up to a few minutes) to reflect the changes to the published content. This must be taken into consideration when reacting to webhooks. In normal conditions, there could be a reasonable delay of 2 to 5 minutes.\n\nExtracted from the [Webhooks FAQ](https://www.contentful.com/faq/webhooks/ \"Webhooks FAQ\")."
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "15jwOBqpxqSAOy2eOO4S0m"
+            }
+          }
+        },
+        "publishDate": {
+          "en-US": "2017-05-12T00:00+02:00"
+        },
+        "tags": {
+          "en-US": [
+            "javascript"
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "3K9b0esdy0q0yGqgW2g6Ke",
+        "type": "Entry",
+        "createdAt": "2019-11-20T23:33:21.719Z",
+        "updatedAt": "2019-11-20T23:33:26.904Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-11-20T23:33:26.904Z",
+        "firstPublishedAt": "2019-11-20T23:33:26.904Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hello world"
+        },
+        "slug": {
+          "en-US": "hello-world"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6Od9v3wzLOysiMum0Wkmme"
+            }
+          }
+        },
+        "description": {
+          "en-US": "Your very first content with Contentful, pulled in JSON format using the Content Delivery API."
+        },
+        "body": {
+          "en-US": "These is your very first content with Contentful, pulled in JSON format using the [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/ \"Content Delivery API\"). Content and presentation are now decoupled, allowing you to focus your efforts in building the perfect app.\n\n## Your first steps\n\nBuilding with Contentful is easy. First take a moment to get [the basics of content modelling](https://www.contentful.com/r/knowledgebase/content-modelling-basics/ \"the basics of content modelling\"), which you can set up in the [Contentful Web app](https://app.contentful.com/ \"Contentful Web app\"). Once you get that, feel free to drop by the [Documentation](https://www.contentful.com/developers/docs/ \"Documentation\") to learn a bit more about how to build your app with Contentful, in particular the [API basics](https://www.contentful.com/developers/docs/concepts/apis/ \"API basics\") and each one of our four APIs, as shown below.\n\n### Content Delivery API\n\nThe [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/ \"Content Delivery API\") (CDA), available at `cdn.contentful.com`, is a read-only API for delivering content from Contentful to apps, websites and other media. Content is delivered as JSON data, and images, videos and other media as files.\nThe API is available via a globally distributed content delivery network. The server closest to the user serves all content, both JSON and binary. This minimizes latency, which especially benefits mobile apps. Hosting content in multiple global data centers also greatly improves the availability of content.\n\n### Content Management API\n\nThe [Content Management API](https://www.contentful.com/developers/docs/references/content-management-api/ \"Content Management API\") (CMA), available at `api.contentful.com`, is a read-write API for managing content. Unlike the Content Delivery API, the management API requires you to authenticate as a Contentful user. You could use the CMA for several use cases, such as:\n* Automatic imports from different CMSes like WordPress or Drupal.\n* Integration with other backend systems, such as an e-commerce shop.\n* Building custom editing experiences. We built the [Contentful Web app](https://app.contentful.com/ \"Contentful Web app\") on top of this API.\n\n### Preview API\n\nThe [Content Preview API](https://www.contentful.com/developers/docs/concepts/apis/#content-preview-api \"Content Preview API\"), available at `preview.contentful.com`, is a variant of the CDA for previewing your content before delivering it to your customers. You use the Content Preview API in combination with a \"preview\" deployment of your website (or a \"preview\" build of your mobile app) that allows content managers and authors to view their work in-context, as if it were published, using a \"preview\" access token as though it were delivered by the CDA.\n\n### Images API\n\nThe [Images API](https://www.contentful.com/developers/docs/concepts/apis/#images-api \"Images API\"), available at `images.contentful.com`, allows you to resize and crop images, change their background color and convert them to different formats. Using our API for these transformations lets you upload high-quality assets, deliver exactly what your app needs, and still get all the benefits of our caching CDN."
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "15jwOBqpxqSAOy2eOO4S0m"
+            }
+          }
+        },
+        "publishDate": {
+          "en-US": "2017-05-15T00:00+02:00"
+        },
+        "tags": {
+          "en-US": [
+            "general"
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "3UixoEubtgqLgdWB4dZcjw",
+        "type": "Entry",
+        "createdAt": "2019-11-21T23:33:29.269Z",
+        "updatedAt": "2019-12-03T11:21:27.191Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 32,
+        "publishedAt": "2019-12-03T11:21:27.191Z",
+        "firstPublishedAt": "2019-11-21T23:33:44.970Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 33,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "language"
+        },
+        "fieldIndex": {
+          "en-US": "100"
+        },
+        "description": {
+          "en-US": "Language (Or Framework)"
+        },
+        "show": {
+          "en-US": true
+        },
+        "rowClass": {
+          "en-US": "table-warning"
+        },
+        "slideIndex": {
+          "en-US": "4"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "2bl1cQzUJYBRvbCXOChcM0",
+        "type": "Entry",
+        "createdAt": "2019-11-21T23:34:22.592Z",
+        "updatedAt": "2019-12-05T02:05:43.831Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 164,
+        "publishedAt": "2019-12-05T02:05:43.831Z",
+        "firstPublishedAt": "2019-11-21T23:35:08.991Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 165,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Sitecore"
+        },
+        "url": {
+          "en-US": "https://www.sitecore.com/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "Friendly",
+            "rest": "Limited Support",
+            "cloud": true,
+            "trend": "Flat",
+            "WYSIWYG": true,
+            "graphQL": "?",
+            "install": "Difficult",
+            "license": "",
+            "opAdmin": "Friendly",
+            "pricing": "<br/>$$$$$",
+            "restOwn": "Supported",
+            "database": [
+              "SQL Server",
+              "+ MongoDB"
+            ],
+            "features": "A wide range of features",
+            "headless": false,
+            "language": ".Net",
+            "security": "High",
+            "community": "",
+            "conclusion": "Powerful especially for companies running diversified businesses",
+            "openSource": false,
+            "versioning": true,
+            "scalability": "High",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": true
+          }
+        },
+        "sortIndex": {
+          "en-US": 300
+        },
+        "releaseDate": {
+          "en-US": "v4.3 - 2004"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1sQ0wYokhUDjGYl8T7KBq8",
+        "type": "Entry",
+        "createdAt": "2019-11-21T23:35:47.234Z",
+        "updatedAt": "2019-12-05T01:45:31.282Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 181,
+        "publishedAt": "2019-12-05T01:45:31.282Z",
+        "firstPublishedAt": "2019-11-21T23:36:06.726Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 182,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "AEM"
+        },
+        "fullName": {
+          "en-US": "Adobe Experience Manager"
+        },
+        "url": {
+          "en-US": "https://www.adobe.com/au/marketing/experience-manager.html"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "language": "Java",
+            "database": [
+              "Oracle",
+              "DB2",
+              "MySQL*",
+              "MariaDB*",
+              "SQL Server*",
+              "+ MongoDB"
+            ],
+            "openSource": false,
+            "license": "",
+            "pricing": "<br/>$$$$$",
+            "rest": "Limited Support",
+            "restOwn": "Supported",
+            "headless": false,
+            "graphQL": false,
+            "trend": "Flat",
+            "self-hosted": true,
+            "cloud": "?",
+            "install": "Difficult",
+            "WYSIWYG": true,
+            "versioning": true,
+            "personalization": "Average",
+            "features": "A wide range of features",
+            "opAdmin": "Friendly",
+            "seo": "Friendly",
+            "scalability": "High",
+            "security": "High",
+            "documentation": "",
+            "community": "",
+            "conclusion": "Powerful especially for businesses that focus on content-sharing"
+          }
+        },
+        "sortIndex": {
+          "en-US": 400
+        },
+        "releaseDate": {
+          "en-US": "CQ: 2000, CQ5.5: 2012, AEM 5.6: 2013"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "5ydUebmLdxtVlXwhVJ0G5H",
+        "type": "Entry",
+        "createdAt": "2019-11-24T23:59:50.833Z",
+        "updatedAt": "2019-12-03T11:21:48.372Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2019-12-03T11:21:48.372Z",
+        "firstPublishedAt": "2019-11-25T00:00:10.697Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "database"
+        },
+        "fieldIndex": {
+          "en-US": "105"
+        },
+        "description": {
+          "en-US": "Supported Databases"
+        },
+        "show": {
+          "en-US": true
+        },
+        "slideIndex": {
+          "en-US": "5"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "26WKFOgOo8YWpzqzsC9PMG",
+        "type": "Entry",
+        "createdAt": "2019-11-25T00:04:27.833Z",
+        "updatedAt": "2019-12-05T01:37:40.925Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 180,
+        "publishedAt": "2019-12-05T01:37:40.925Z",
+        "firstPublishedAt": "2019-11-25T00:05:34.302Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 181,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Umbraco"
+        },
+        "url": {
+          "en-US": "https://umbraco.com/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "",
+            "rest": "Discontinued",
+            "cloud": true,
+            "trend": "Down",
+            "WYSIWYG": false,
+            "graphQL": false,
+            "install": "Easy",
+            "license": "MIT License",
+            "opAdmin": "",
+            "pricing": "Start from free<br/><a href=\"https://umbraco.com/umbraco-cloud-pricing/\" target=\"_blank\">$$</a>",
+            "restOwn": "Supported",
+            "database": [
+              "SQL Server",
+              "MySQL (Stop supporting from V8)"
+            ],
+            "features": "",
+            "headless": false,
+            "language": ".Net",
+            "security": "",
+            "community": "",
+            "conclusion": "Good for small and medium businesses with casual authors",
+            "openSource": true,
+            "versioning": true,
+            "scalability": "",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": false
+          }
+        },
+        "sortIndex": {
+          "en-US": 290
+        },
+        "releaseDate": {
+          "en-US": "2000 - open source in 2004"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "5wPja9soR3sVLxI5D19jNo",
+        "type": "Entry",
+        "createdAt": "2019-11-25T00:21:49.056Z",
+        "updatedAt": "2019-11-25T00:22:17.879Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-11-25T00:22:17.879Z",
+        "firstPublishedAt": "2019-11-25T00:22:17.879Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "license"
+        },
+        "fieldIndex": {
+          "en-US": "200"
+        },
+        "description": {
+          "en-US": "License"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4oaMiLeKv9Ju30Jsb3CYIZ",
+        "type": "Entry",
+        "createdAt": "2019-11-25T01:20:01.939Z",
+        "updatedAt": "2019-12-05T01:28:19.723Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 124,
+        "publishedAt": "2019-12-05T01:28:19.723Z",
+        "firstPublishedAt": "2019-11-25T01:21:24.590Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 125,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "WordPress"
+        },
+        "url": {
+          "en-US": "https://wordpress.com/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "",
+            "rest": "Supported",
+            "cloud": true,
+            "trend": "Down",
+            "WYSIWYG": true,
+            "graphQL": "Via Plugin",
+            "install": "Easy",
+            "license": "GPLv2+",
+            "opAdmin": "",
+            "pricing": "Start from free<br/><a href=\"https://wordpress.com/pricing/\" target=\"_blank\">$</a>",
+            "restOwn": "Supported",
+            "database": [
+              "MySQL",
+              "MariaDB"
+            ],
+            "features": "Extensive plugins",
+            "headless": false,
+            "language": "PHP",
+            "security": "",
+            "community": "",
+            "conclusion": "Most popular",
+            "openSource": true,
+            "versioning": true,
+            "scalability": "",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": false
+          }
+        },
+        "sortIndex": {
+          "en-US": 100
+        },
+        "releaseDate": {
+          "en-US": "May 27, 2003"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "10hblfBWcRXPqDADuI084M",
+        "type": "Entry",
+        "createdAt": "2019-11-25T02:30:26.702Z",
+        "updatedAt": "2019-11-25T02:31:07.608Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2019-11-25T02:31:07.607Z",
+        "firstPublishedAt": "2019-11-25T02:31:07.607Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "openSource"
+        },
+        "fieldIndex": {
+          "en-US": "195"
+        },
+        "description": {
+          "en-US": "Open Source"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1IzlS5eUYOkJo8orJu8eL1",
+        "type": "Entry",
+        "createdAt": "2019-11-25T02:31:21.839Z",
+        "updatedAt": "2019-11-25T02:31:34.240Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-11-25T02:31:34.240Z",
+        "firstPublishedAt": "2019-11-25T02:31:34.240Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "pricing"
+        },
+        "fieldIndex": {
+          "en-US": "205"
+        },
+        "description": {
+          "en-US": "Pricing"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1C6LhL7cdrakBXGmHQrr03",
+        "type": "Entry",
+        "createdAt": "2019-11-25T02:51:48.877Z",
+        "updatedAt": "2019-12-01T23:22:50.231Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 34,
+        "publishedAt": "2019-12-01T23:22:50.231Z",
+        "firstPublishedAt": "2019-11-25T02:53:03.086Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 35,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "rest"
+        },
+        "fieldIndex": {
+          "en-US": "150"
+        },
+        "description": {
+          "en-US": "REST API"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "6WohtJQwKQyeDl2I9iIck7",
+        "type": "Entry",
+        "createdAt": "2019-11-25T03:33:34.437Z",
+        "updatedAt": "2019-12-05T01:29:00.673Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 130,
+        "publishedAt": "2019-12-05T01:29:00.673Z",
+        "firstPublishedAt": "2019-11-25T03:59:19.191Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 9,
+        "version": 131,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Drupal"
+        },
+        "url": {
+          "en-US": "https://www.drupal.org/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "",
+            "rest": "Supported",
+            "cloud": false,
+            "trend": "Down",
+            "WYSIWYG": true,
+            "graphQL": true,
+            "install": "Difficult",
+            "license": "GPLv2+",
+            "opAdmin": "",
+            "pricing": "Free",
+            "restOwn": "Supported",
+            "database": [
+              "MySQL",
+              "Maria",
+              "PostgreSQL",
+              "SQLite",
+              "SQL Server",
+              "Oracle"
+            ],
+            "features": "Most of the functionality needed already built-in",
+            "headless": false,
+            "language": "PHP",
+            "security": "High",
+            "community": "",
+            "conclusion": "Robust and Complex",
+            "openSource": true,
+            "versioning": true,
+            "scalability": "",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": true
+          }
+        },
+        "sortIndex": {
+          "en-US": 110
+        },
+        "releaseDate": {
+          "en-US": "May 18, 2000"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4COdkiBnRwJ2q9IxBqAsHc",
+        "type": "Entry",
+        "createdAt": "2019-11-25T04:10:36.863Z",
+        "updatedAt": "2019-12-04T05:11:53.900Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2019-12-04T05:11:53.900Z",
+        "firstPublishedAt": "2019-11-25T04:11:06.791Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "versioning"
+        },
+        "fieldIndex": {
+          "en-US": "506"
+        },
+        "description": {
+          "en-US": "Versioning"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "5KPsNtlnuK7l8BK3883Tin",
+        "type": "Entry",
+        "createdAt": "2019-11-25T04:12:12.588Z",
+        "updatedAt": "2019-12-04T05:14:13.048Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 26,
+        "publishedAt": "2019-12-04T05:14:13.048Z",
+        "firstPublishedAt": "2019-11-25T04:12:32.527Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "opAdmin"
+        },
+        "fieldIndex": {
+          "en-US": "509"
+        },
+        "description": {
+          "en-US": "Easy of Admin"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "5YBMa6ta54cxgNgk8qaVeB",
+        "type": "Entry",
+        "createdAt": "2019-11-25T04:15:09.938Z",
+        "updatedAt": "2019-12-05T01:33:28.965Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 94,
+        "publishedAt": "2019-12-05T01:33:28.965Z",
+        "firstPublishedAt": "2019-11-25T04:27:35.501Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 95,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Joomla"
+        },
+        "url": {
+          "en-US": "https://www.joomla.org/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "Powerful SEO tools built",
+            "opCM": "",
+            "rest": "Supported",
+            "cloud": false,
+            "trend": "Down",
+            "WYSIWYG": true,
+            "install": "Easy",
+            "license": "GPL",
+            "opAdmin": "",
+            "pricing": "Free",
+            "restOwn": "Supported",
+            "database": [
+              "MySQL",
+              "SQL Server",
+              "PostgreSQL",
+              "SQLite"
+            ],
+            "features": "",
+            "language": "PHP",
+            "security": "",
+            "community": "",
+            "conclusion": "A productive open-source CMS",
+            "openSource": true,
+            "versioning": true,
+            "scalability": "",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": false
+          }
+        },
+        "sortIndex": {
+          "en-US": 120
+        },
+        "releaseDate": {
+          "en-US": "Aug 17, 2005"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "3cqjuF4rDQ9nLXOE8DgEJP",
+        "type": "Entry",
+        "createdAt": "2019-11-25T04:28:03.536Z",
+        "updatedAt": "2019-12-03T12:18:21.706Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2019-12-03T12:18:21.706Z",
+        "firstPublishedAt": "2019-11-25T04:28:28.336Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "headless"
+        },
+        "fieldIndex": {
+          "en-US": "160"
+        },
+        "description": {
+          "en-US": "Headless CMS"
+        },
+        "show": {
+          "en-US": true
+        },
+        "slideIndex": {
+          "en-US": "7"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1MrYc2xiFTYeBMNFVImF2r",
+        "type": "Entry",
+        "createdAt": "2019-11-25T04:28:50.981Z",
+        "updatedAt": "2019-12-04T05:24:10.908Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 20,
+        "publishedAt": "2019-12-04T05:24:10.908Z",
+        "firstPublishedAt": "2019-11-25T04:29:10.699Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "seo"
+        },
+        "fieldIndex": {
+          "en-US": "520"
+        },
+        "description": {
+          "en-US": "SEO Friendly"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "7yxX6Glv026pUPjlo6fFDp",
+        "type": "Entry",
+        "createdAt": "2019-11-25T04:34:02.509Z",
+        "updatedAt": "2019-12-05T01:34:54.832Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 179,
+        "publishedAt": "2019-12-05T01:34:54.832Z",
+        "firstPublishedAt": "2019-11-25T05:03:20.646Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 11,
+        "version": 180,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Acquia"
+        },
+        "url": {
+          "en-US": "https://www.acquia.com/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "",
+            "opCM": "",
+            "rest": "<-",
+            "cloud": true,
+            "trend": "Flat",
+            "WYSIWYG": "<-",
+            "graphQL": true,
+            "install": "<-",
+            "license": "N/A",
+            "opAdmin": "",
+            "pricing": "<br/><a href=\"https://www.acquia.com/choosing-right-acquia-cloud\" target=\"_blank\">$$</a>",
+            "restOwn": "<-",
+            "database": [
+              "MySQL",
+              "SQL Server",
+              "Oracle",
+              "PostgresSQL"
+            ],
+            "features": "<-",
+            "headless": false,
+            "language": "PHP (Made for Drupal)",
+            "security": "",
+            "community": "",
+            "conclusion": "Offer outstanding services for Drupal",
+            "openSource": false,
+            "versioning": "<-",
+            "scalability": "",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": "<-"
+          }
+        },
+        "sortIndex": {
+          "en-US": 111
+        },
+        "releaseDate": {
+          "en-US": "2007 - Founded"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1sWevVYrW9Ge2xqUwGZ76F",
+        "type": "Entry",
+        "createdAt": "2019-11-25T05:10:51.901Z",
+        "updatedAt": "2019-12-02T00:16:38.537Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 52,
+        "publishedAt": "2019-12-02T00:16:38.537Z",
+        "firstPublishedAt": "2019-11-25T05:11:44.417Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 53,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "restOwn"
+        },
+        "fieldIndex": {
+          "en-US": "151"
+        },
+        "description": {
+          "en-US": "Custom API"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4gaKyC74TmY4XKQVJatuC6",
+        "type": "Entry",
+        "createdAt": "2019-11-25T05:12:37.748Z",
+        "updatedAt": "2019-12-01T23:25:38.917Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2019-12-01T23:25:38.917Z",
+        "firstPublishedAt": "2019-11-25T05:13:06.396Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "graphQL"
+        },
+        "fieldIndex": {
+          "en-US": "161"
+        },
+        "description": {
+          "en-US": "GraphQL API"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "OpZGTG7ppTDT8WwpqtNNI",
+        "type": "Entry",
+        "createdAt": "2019-11-25T05:24:08.700Z",
+        "updatedAt": "2019-12-05T01:47:23.055Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 103,
+        "publishedAt": "2019-12-05T01:47:23.055Z",
+        "firstPublishedAt": "2019-11-25T05:45:54.397Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 104,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Contentful"
+        },
+        "url": {
+          "en-US": "https://www.contentful.com/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "N/A",
+            "rest": "Supported",
+            "cloud": true,
+            "trend": "Up",
+            "WYSIWYG": "N/A",
+            "graphQL": true,
+            "install": "Fairly easy",
+            "license": "",
+            "opAdmin": "",
+            "pricing": "Start from free<br/><a href=\"https://www.contentful.com/pricing/\" target=\"_blank\">$$$</a>",
+            "restOwn": "No",
+            "database": "?",
+            "features": "",
+            "headless": true,
+            "language": "?",
+            "security": "High",
+            "community": "",
+            "conclusion": "Cloud-based content infrastructure",
+            "openSource": false,
+            "versioning": true,
+            "scalability": "High",
+            "self-hosted": false,
+            "documentation": "",
+            "personalization": true
+          }
+        },
+        "sortIndex": {
+          "en-US": 500
+        },
+        "releaseDate": {
+          "en-US": "2013 - launched"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4zuVd2tvi1wwQyWpPiqeH0",
+        "type": "Entry",
+        "createdAt": "2019-11-25T05:46:03.918Z",
+        "updatedAt": "2019-12-05T01:50:47.827Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 81,
+        "publishedAt": "2019-12-05T01:50:47.827Z",
+        "firstPublishedAt": "2019-11-25T05:52:32.467Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 82,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Kentico"
+        },
+        "url": {
+          "en-US": "https://www.kentico.com/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "rest": "Supported",
+            "graphQL": true,
+            "license": "",
+            "pricing": "Free Trial<br/><a href=\"https://www.kentico.com/purchase/price-list/product-license-pricelist\" target=\"_blank\">$$$$</a>",
+            "restOwn": "Supported",
+            "database": "SQL Server",
+            "headless": false,
+            "language": ".Net",
+            "trend": "Flat",
+            "openSource": false,
+            "self-hosted": true,
+            "cloud": true,
+            "install": "?",
+            "WYSIWYG": true,
+            "versioning": true,
+            "personalization": "Supported",
+            "features": "",
+            "opAdmin": "",
+            "seo": "Friendly",
+            "scalability": "High",
+            "security": "High",
+            "documentation": "",
+            "community": "",
+            "conclusion": "Highly configurable and adaptable"
+          }
+        },
+        "sortIndex": {
+          "en-US": 600
+        },
+        "releaseDate": {
+          "en-US": "v2 - Nov 21, 2006"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "2Ml8k1IecU87BoQG4ccvgx",
+        "type": "Entry",
+        "createdAt": "2019-11-28T23:04:55.358Z",
+        "updatedAt": "2019-12-03T11:20:44.790Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2019-12-03T11:20:44.790Z",
+        "firstPublishedAt": "2019-11-28T23:05:25.196Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Innovative, empower"
+        },
+        "slug": {
+          "en-US": "innovative-empower"
+        },
+        "index": {
+          "en-US": 1
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "5n5wD3T4M8PWitDfqBH0Ac",
+        "type": "Entry",
+        "createdAt": "2019-11-29T02:32:19.085Z",
+        "updatedAt": "2019-11-29T13:35:30.302Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 35,
+        "publishedAt": "2019-11-29T13:35:30.302Z",
+        "firstPublishedAt": "2019-11-29T02:32:59.650Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 36,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Content Management Systems"
+        },
+        "slug": {
+          "en-US": "cms-a"
+        },
+        "index": {
+          "en-US": 2
+        },
+        "type": {
+          "en-US": "ReactComponent"
+        },
+        "reference": {
+          "en-US": "comp-a"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1QIompC0PqI8CsZrGYeNY2",
+        "type": "Entry",
+        "createdAt": "2019-11-29T04:26:44.772Z",
+        "updatedAt": "2019-11-29T14:22:30.115Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 56,
+        "publishedAt": "2019-11-29T14:22:30.115Z",
+        "firstPublishedAt": "2019-11-29T04:42:24.634Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 57,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Breakdown by Language"
+        },
+        "slug": {
+          "en-US": "language"
+        },
+        "index": {
+          "en-US": 4
+        },
+        "type": {
+          "en-US": "component"
+        },
+        "reference": {
+          "en-US": "language"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "rrCEHlGun5hT8UAbYuCDn",
+        "type": "Entry",
+        "createdAt": "2019-11-29T12:45:57.471Z",
+        "updatedAt": "2019-12-05T01:51:49.036Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 124,
+        "publishedAt": "2019-12-05T01:51:49.036Z",
+        "firstPublishedAt": "2019-11-29T12:46:53.846Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 11,
+        "version": 125,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "cms"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Ghost"
+        },
+        "url": {
+          "en-US": "https://ghost.org/"
+        },
+        "show": {
+          "en-US": true
+        },
+        "comparisonFieldValues": {
+          "en-US": {
+            "seo": "Friendly",
+            "rest": "Supported",
+            "cloud": true,
+            "trend": "Up",
+            "WYSIWYG": false,
+            "graphQL": true,
+            "install": "Easy",
+            "license": "MIT",
+            "opAdmin": "",
+            "pricing": "Start from free<br/><a href=\"https://ghost.org/pricing/\" target=\"_blank\">$</a>",
+            "restOwn": "Supported",
+            "database": [
+              "MySQL",
+              "SQLite"
+            ],
+            "features": "",
+            "headless": true,
+            "language": "NodeJS",
+            "security": "",
+            "community": "",
+            "conclusion": "Most popular headless NodeJS CMS (started from - Just a blogging platform)",
+            "openSource": true,
+            "versioning": false,
+            "scalability": "",
+            "self-hosted": true,
+            "documentation": "",
+            "personalization": false
+          }
+        },
+        "sortIndex": {
+          "en-US": 700
+        },
+        "releaseDate": {
+          "en-US": " Sep 19, 2013"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "505XAtHzW2QeegLfxlRsRg",
+        "type": "Entry",
+        "createdAt": "2019-11-29T13:06:54.182Z",
+        "updatedAt": "2019-12-03T11:23:01.006Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 20,
+        "publishedAt": "2019-12-03T11:23:01.006Z",
+        "firstPublishedAt": "2019-11-29T13:07:37.806Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "trend"
+        },
+        "fieldIndex": {
+          "en-US": "120"
+        },
+        "description": {
+          "en-US": "Trend"
+        },
+        "show": {
+          "en-US": true
+        },
+        "slideIndex": {
+          "en-US": "6"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4suWhBi7Tv7g7lebePhPYe",
+        "type": "Entry",
+        "createdAt": "2019-11-29T14:22:41.242Z",
+        "updatedAt": "2019-11-29T14:23:33.333Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2019-11-29T14:23:33.333Z",
+        "firstPublishedAt": "2019-11-29T14:23:33.333Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Gartner - Magic Quadrant"
+        },
+        "slug": {
+          "en-US": "gartner"
+        },
+        "index": {
+          "en-US": 3
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "3GIxeQFFIukTLmPuQwI6Px",
+        "type": "Entry",
+        "createdAt": "2019-11-29T14:33:29.691Z",
+        "updatedAt": "2019-11-29T14:33:53.715Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2019-11-29T14:33:53.715Z",
+        "firstPublishedAt": "2019-11-29T14:33:53.715Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Supported Database"
+        },
+        "slug": {
+          "en-US": "database"
+        },
+        "index": {
+          "en-US": 5
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "5gDVuiL3OHfDyTHatJvwPk",
+        "type": "Entry",
+        "createdAt": "2019-11-29T14:37:24.824Z",
+        "updatedAt": "2019-11-29T14:54:40.988Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2019-11-29T14:54:40.988Z",
+        "firstPublishedAt": "2019-11-29T14:37:38.737Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Google Trend"
+        },
+        "slug": {
+          "en-US": "trend"
+        },
+        "index": {
+          "en-US": 6
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "3fOkNA868lWkObrI1yPCeS",
+        "type": "Entry",
+        "createdAt": "2019-11-29T15:22:01.499Z",
+        "updatedAt": "2019-12-04T06:14:32.536Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2019-12-04T06:14:32.536Z",
+        "firstPublishedAt": "2019-11-29T15:22:18.971Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "community"
+        },
+        "fieldIndex": {
+          "en-US": "552"
+        },
+        "description": {
+          "en-US": "Community"
+        },
+        "show": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "yLQxd0V6gHBLrTrJmQ4n5",
+        "type": "Entry",
+        "createdAt": "2019-11-29T15:34:52.301Z",
+        "updatedAt": "2019-12-04T05:02:21.176Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 35,
+        "publishedAt": "2019-12-04T05:02:21.176Z",
+        "firstPublishedAt": "2019-11-29T15:35:15.506Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 36,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "WYSIWYG"
+        },
+        "fieldIndex": {
+          "en-US": "505"
+        },
+        "description": {
+          "en-US": "WYSIWYG Editing"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "7mEt6lNFOfVJwN84MmsYlh",
+        "type": "Entry",
+        "createdAt": "2019-11-29T15:36:12.694Z",
+        "updatedAt": "2019-12-04T04:54:47.852Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-12-04T04:54:47.852Z",
+        "firstPublishedAt": "2019-11-29T15:36:49.461Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "usability"
+        },
+        "fieldIndex": {
+          "en-US": "500"
+        },
+        "description": {
+          "en-US": "Usability"
+        },
+        "show": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4ycLsQnTYY3fpkvxBfcTgk",
+        "type": "Entry",
+        "createdAt": "2019-11-29T15:38:49.167Z",
+        "updatedAt": "2019-12-04T05:23:48.960Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 20,
+        "publishedAt": "2019-12-04T05:23:48.960Z",
+        "firstPublishedAt": "2019-11-29T15:39:05.195Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "security"
+        },
+        "fieldIndex": {
+          "en-US": "525"
+        },
+        "description": {
+          "en-US": "The Level of Security"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4WJV1TD6ftKCRXMk2rnedF",
+        "type": "Entry",
+        "createdAt": "2019-11-30T13:29:06.546Z",
+        "updatedAt": "2019-12-02T00:14:42.039Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2019-12-02T00:14:42.039Z",
+        "firstPublishedAt": "2019-11-30T13:29:30.118Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "self-hosted"
+        },
+        "fieldIndex": {
+          "en-US": "180"
+        },
+        "description": {
+          "en-US": "Self-hosted"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "74UfL5aEEuJKGhzglU6cOr",
+        "type": "Entry",
+        "createdAt": "2019-11-30T13:32:40.738Z",
+        "updatedAt": "2019-12-02T00:14:56.656Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2019-12-02T00:14:56.656Z",
+        "firstPublishedAt": "2019-11-30T13:33:23.991Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "cloud"
+        },
+        "fieldIndex": {
+          "en-US": "185"
+        },
+        "description": {
+          "en-US": "Cloud Service"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "2vXV0mkFFbXqBM1FPXLdio",
+        "type": "Entry",
+        "createdAt": "2019-12-03T12:09:24.642Z",
+        "updatedAt": "2019-12-03T12:09:56.662Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 20,
+        "publishedAt": "2019-12-03T12:09:56.662Z",
+        "firstPublishedAt": "2019-12-03T12:09:56.662Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 21,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Headless CMS"
+        },
+        "slug": {
+          "en-US": "headless"
+        },
+        "index": {
+          "en-US": 7
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "7xfBOhqB0tRMe9vmHvQrPX",
+        "type": "Entry",
+        "createdAt": "2019-12-03T12:15:07.330Z",
+        "updatedAt": "2019-12-03T12:16:14.671Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2019-12-03T12:16:14.671Z",
+        "firstPublishedAt": "2019-12-03T12:16:14.671Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "slide"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Pros and Cons of API-first CMS"
+        },
+        "slug": {
+          "en-US": "headless-pros-cons"
+        },
+        "index": {
+          "en-US": 8
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4lTLLt9YRHtFhqk4WuABub",
+        "type": "Entry",
+        "createdAt": "2019-12-04T05:08:17.967Z",
+        "updatedAt": "2019-12-04T05:08:37.006Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2019-12-04T05:08:37.006Z",
+        "firstPublishedAt": "2019-12-04T05:08:37.006Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "install"
+        },
+        "fieldIndex": {
+          "en-US": "501"
+        },
+        "description": {
+          "en-US": "Ease of Setup"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1GjvV3wyoCzaVVMvyFvV6T",
+        "type": "Entry",
+        "createdAt": "2019-12-04T05:13:27.466Z",
+        "updatedAt": "2019-12-04T05:13:43.414Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-12-04T05:13:43.414Z",
+        "firstPublishedAt": "2019-12-04T05:13:43.414Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "personalization"
+        },
+        "fieldIndex": {
+          "en-US": "507"
+        },
+        "description": {
+          "en-US": "Personalization"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "FPmKnIgrVmMYZlPZIo7WE",
+        "type": "Entry",
+        "createdAt": "2019-12-04T05:21:14.557Z",
+        "updatedAt": "2019-12-04T05:21:37.137Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-12-04T05:21:37.137Z",
+        "firstPublishedAt": "2019-12-04T05:21:37.137Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "features"
+        },
+        "fieldIndex": {
+          "en-US": "508"
+        },
+        "description": {
+          "en-US": "Functional Capabilities"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "oOAJzBwb20GGNu10hDS1Q",
+        "type": "Entry",
+        "createdAt": "2019-12-04T05:24:20.276Z",
+        "updatedAt": "2019-12-04T05:25:16.269Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-12-04T05:25:16.269Z",
+        "firstPublishedAt": "2019-12-04T05:25:16.269Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "scalability"
+        },
+        "fieldIndex": {
+          "en-US": "521"
+        },
+        "description": {
+          "en-US": "Scalability"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4nzkH2O1GlC7bwytBPMIrN",
+        "type": "Entry",
+        "createdAt": "2019-12-04T05:27:50.739Z",
+        "updatedAt": "2019-12-04T06:14:22.792Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-12-04T06:14:22.792Z",
+        "firstPublishedAt": "2019-12-04T05:28:09.647Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "documentation"
+        },
+        "fieldIndex": {
+          "en-US": "550"
+        },
+        "description": {
+          "en-US": "Documentation"
+        },
+        "show": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "58FUln6hSwCJUWGe2dVXrI",
+        "type": "Entry",
+        "createdAt": "2019-12-04T05:29:52.151Z",
+        "updatedAt": "2019-12-04T05:30:07.605Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-12-04T05:30:07.605Z",
+        "firstPublishedAt": "2019-12-04T05:30:07.605Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "comparisonField"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "conclusion"
+        },
+        "fieldIndex": {
+          "en-US": "600"
+        },
+        "description": {
+          "en-US": "Conclusion"
+        },
+        "show": {
+          "en-US": true
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4NzwDSDlGECGIiokKomsyI",
+        "type": "Asset",
+        "createdAt": "2019-11-20T23:33:11.238Z",
+        "updatedAt": "2019-11-20T23:33:20.759Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-11-20T23:33:20.759Z",
+        "firstPublishedAt": "2019-11-20T23:33:20.759Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "City"
+        },
+        "description": {
+          "en-US": "City pictured from the sky"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2zutlh8ds7xr/4NzwDSDlGECGIiokKomsyI/9a9f9a6f99e428d1801d2b2b44441418/denys-nevozhai-100695.jpg",
+            "details": {
+              "size": 15736986,
+              "image": {
+                "width": 3992,
+                "height": 2992
+              }
+            },
+            "fileName": "denys-nevozhai-100695.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "4shwYI3POEGkw0Eg6kcyaQ",
+        "type": "Asset",
+        "createdAt": "2019-11-20T23:33:11.244Z",
+        "updatedAt": "2019-11-20T23:33:20.314Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-11-20T23:33:20.314Z",
+        "firstPublishedAt": "2019-11-20T23:33:20.314Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Man in the fields"
+        },
+        "description": {
+          "en-US": "Tattooed man walking in a field"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2zutlh8ds7xr/4shwYI3POEGkw0Eg6kcyaQ/fea05b2007b768f5c82c608c9632dc3e/felix-russell-saw-112140.jpg",
+            "details": {
+              "size": 4539181,
+              "image": {
+                "width": 2500,
+                "height": 1667
+              }
+            },
+            "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "7orLdboQQowIUs22KAW4U",
+        "type": "Asset",
+        "createdAt": "2019-11-20T23:33:11.247Z",
+        "updatedAt": "2019-11-20T23:33:19.391Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-11-20T23:33:19.391Z",
+        "firstPublishedAt": "2019-11-20T23:33:19.391Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Sparkler"
+        },
+        "description": {
+          "en-US": "John with Sparkler"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2zutlh8ds7xr/7orLdboQQowIUs22KAW4U/40e072476a0815a53047acaeb6464caa/matt-palmer-254999.jpg",
+            "details": {
+              "size": 2293094,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "matt-palmer-254999.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "6Od9v3wzLOysiMum0Wkmme",
+        "type": "Asset",
+        "createdAt": "2019-11-20T23:33:11.964Z",
+        "updatedAt": "2019-11-20T23:33:21.202Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-11-20T23:33:21.202Z",
+        "firstPublishedAt": "2019-11-20T23:33:21.202Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Woman with black hat"
+        },
+        "description": {
+          "en-US": "Woman wearing a black hat"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2zutlh8ds7xr/6Od9v3wzLOysiMum0Wkmme/233020dd3a4f79788a6ac38ccb009f4f/cameron-kirby-88711.jpg",
+            "details": {
+              "size": 7316629,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "cameron-kirby-88711.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "id": "1NRNblWtXc1o8FXnaG0gpm",
+        "type": "Asset",
+        "createdAt": "2019-11-21T05:31:59.983Z",
+        "updatedAt": "2019-11-21T05:33:12.554Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2019-11-21T05:33:12.554Z",
+        "firstPublishedAt": "2019-11-21T05:33:12.554Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "IE Logo"
+        },
+        "description": {
+          "en-US": "Logo of IE"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/2zutlh8ds7xr/1NRNblWtXc1o8FXnaG0gpm/30ccc9e417df1caa468f7e9f9df39af4/ie_logo_white.png",
+            "details": {
+              "size": 3596,
+              "image": {
+                "width": 500,
+                "height": 200
+              }
+            },
+            "fileName": "ie_logo_white.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "U.S. English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0Zg2qK2F1PgNYNIAKYB6qx",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "2zutlh8ds7xr"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "createdAt": "2019-11-20T23:26:39Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3O2hSWn79yjqD5lentHqpM"
+          }
+        },
+        "updatedAt": "2019-11-20T23:33:04Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+  ]
+}
