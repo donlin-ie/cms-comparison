@@ -9,8 +9,8 @@ const contentfulConfig = {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby React Bootstrap Contentful Starter`,
-    description: `A starter that includes react-bootstrap, react-icons and contentful, along with SASS compilation.`,
+    title: `CMS Comparsion`,
+    description: `A high level comparison among some of popular CMS frameworks.`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
