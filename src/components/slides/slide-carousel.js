@@ -16,7 +16,6 @@ class SlideCarousel extends React.Component {
   }
 
   render() {
-
     return (
       <>
         <Row>

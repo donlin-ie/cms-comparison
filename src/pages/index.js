@@ -36,8 +36,10 @@ class IndexPage extends React.Component {
                       href={system.url}
                       target="_blank"
                     >
-                      { (system.fullName && system.fullName !== '') ? system.fullName + ' ('+ system.name + ')' : system.name }
-                       {" (" + system.releaseDate + ")"}
+                      {system.fullName && system.fullName !== ""
+                        ? system.fullName + " (" + system.name + ")"
+                        : system.name}
+                      {" (" + system.releaseDate + ")"}
                     </ListGroup.Item>
                   )
                 })}
@@ -48,8 +50,8 @@ class IndexPage extends React.Component {
             <Col>
               <p>Possibly choose other candidates below:</p>
               <p>
-                WP Engine, Silverstripe, Episever CMS, Progress Sitefinity, Craft CMS,
-                ButterCMS or ContentStack etc.
+                WP Engine, Silverstripe, Episever CMS, Progress Sitefinity,
+                Craft CMS, ButterCMS or ContentStack etc.
               </p>
             </Col>
           </Row>

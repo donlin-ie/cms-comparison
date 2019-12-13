@@ -66,7 +66,12 @@ class SlideTemplate extends React.Component {
             </Row>
             <Row className="row-slide">
               <Col className="px-5 pt-5">
-                {this.renderSlide({ slide, cmsSetImgFiles, gartnerImgFiles, headlessImgFiles })}
+                {this.renderSlide({
+                  slide,
+                  cmsSetImgFiles,
+                  gartnerImgFiles,
+                  headlessImgFiles,
+                })}
               </Col>
             </Row>
           </Container>

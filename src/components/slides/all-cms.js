@@ -48,12 +48,17 @@ class SlideAllCms extends React.Component {
           <Col>
             <ButtonToolbar className="mt-5">
               <Button
-                href="https://en.wikipedia.org/wiki/List_of_content_management_systems" rel="noopener noreferrer"
+                href="https://en.wikipedia.org/wiki/List_of_content_management_systems"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 List of CMS - Wikipedia
               </Button>
-              <Button href="https://whatcms.org/Tech_Reports" rel="noopener noreferrer" target="_blank">
+              <Button
+                href="https://whatcms.org/Tech_Reports"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 WhatCMS.org
               </Button>
             </ButtonToolbar>
